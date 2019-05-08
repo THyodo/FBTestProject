@@ -1,55 +1,56 @@
-2019-05-08T09:19:13.458Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-08T09:19:13.462Z - normal: checking language setting...
-2019-05-08T09:19:13.462Z - normal: Language: en
-2019-05-08T09:19:14.072Z - success: protocol editor-framework registered
-2019-05-08T09:19:14.072Z - success: protocol app registered
-2019-05-08T09:19:14.072Z - success: protocol theme registered
-2019-05-08T09:19:14.072Z - success: protocol packages registered
-2019-05-08T09:19:14.073Z - success: protocol unpack registerred
-2019-05-08T09:19:14.073Z - success: protocol disable-commonjs registerred
-2019-05-08T09:19:15.085Z - normal: connected!
-2019-05-08T09:19:15.086Z - normal: Check project /Users/hautecouture_macbookpro/Documents/Cocos_project/testProject
-2019-05-08T09:19:15.087Z - normal: Initializing Cocos2d
-2019-05-08T09:19:15.248Z - normal: Initializing Asset Database
-2019-05-08T09:19:15.275Z - success: protocol uuid registerred
-2019-05-08T09:19:15.275Z - success: protocol db registerred
-2019-05-08T09:19:15.275Z - success: protocol thumbnail registerred
-2019-05-08T09:19:15.275Z - normal: Loading editor/builtin packages
-2019-05-08T09:19:15.293Z - success: anysdk loaded
-2019-05-08T09:19:15.405Z - success: assets loaded
-2019-05-08T09:19:15.408Z - success: builder loaded
-2019-05-08T09:19:15.410Z - success: cocos-analytics loaded
-2019-05-08T09:19:15.414Z - success: console loaded
-2019-05-08T09:19:15.447Z - success: fb-instant-games loaded
-2019-05-08T09:19:15.451Z - success: hierarchy loaded
-2019-05-08T09:19:15.454Z - success: inspector loaded
-2019-05-08T09:19:15.456Z - success: keystore loaded
-2019-05-08T09:19:15.459Z - success: node-library loaded
-2019-05-08T09:19:15.461Z - success: package-asset loaded
-2019-05-08T09:19:15.463Z - success: preferences loaded
-2019-05-08T09:19:15.465Z - success: project-exporter loaded
-2019-05-08T09:19:15.479Z - success: project-importer loaded
-2019-05-08T09:19:15.482Z - success: project-settings loaded
-2019-05-08T09:19:15.486Z - success: ui-kit loaded
-2019-05-08T09:19:15.490Z - success: ui-grid loaded
-2019-05-08T09:19:15.494Z - success: scene loaded
-2019-05-08T09:19:15.495Z - success: sprite-editor loaded
-2019-05-08T09:19:15.499Z - success: store loaded
-2019-05-08T09:19:15.504Z - success: timeline loaded
-2019-05-08T09:19:15.504Z - normal: Loading builtin packages
-2019-05-08T09:19:15.508Z - success: asset-db-debugger loaded
-2019-05-08T09:19:15.509Z - success: color-picker loaded
-2019-05-08T09:19:15.511Z - success: package-manager loaded
-2019-05-08T09:19:15.512Z - success: qqplay-adapter loaded
-2019-05-08T09:19:15.518Z - success: sdkbox loaded
-2019-05-08T09:19:15.522Z - success: tester loaded
-2019-05-08T09:19:15.525Z - success: ui-kit-preview-extra loaded
-2019-05-08T09:19:15.528Z - success: ui-kit-preview loaded
-2019-05-08T09:19:15.531Z - success: ui-tree loaded
-2019-05-08T09:19:15.532Z - success: weapp-adapter loaded
-2019-05-08T09:19:16.415Z - normal: Initializing project /Users/hautecouture_macbookpro/Documents/Cocos_project/testProject
-2019-05-08T09:19:16.416Z - normal: Loading packages
-2019-05-08T09:19:16.422Z - normal: Watching packages
-2019-05-08T09:19:16.531Z - normal: Run Application
-2019-05-08T09:19:17.037Z - success: preview server running at http://localhost:7456
-2019-05-08T09:19:20.949Z - normal: 1.9.3
+2019-05-08T09:39:05.136Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-08T09:39:05.139Z - normal: checking language setting...
+2019-05-08T09:39:05.140Z - normal: Language: en
+2019-05-08T09:39:05.726Z - success: protocol editor-framework registered
+2019-05-08T09:39:05.727Z - success: protocol app registered
+2019-05-08T09:39:05.727Z - success: protocol theme registered
+2019-05-08T09:39:05.727Z - success: protocol packages registered
+2019-05-08T09:39:05.727Z - success: protocol unpack registerred
+2019-05-08T09:39:05.728Z - success: protocol disable-commonjs registerred
+2019-05-08T09:39:08.718Z - normal: failed to connect login server due to request timeout
+2019-05-08T09:39:08.719Z - normal: Check project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-08T09:39:08.721Z - normal: Initializing Cocos2d
+2019-05-08T09:39:08.886Z - normal: Initializing Asset Database
+2019-05-08T09:39:08.913Z - success: protocol uuid registerred
+2019-05-08T09:39:08.913Z - success: protocol db registerred
+2019-05-08T09:39:08.914Z - success: protocol thumbnail registerred
+2019-05-08T09:39:08.914Z - normal: Loading editor/builtin packages
+2019-05-08T09:39:08.932Z - success: anysdk loaded
+2019-05-08T09:39:09.040Z - success: assets loaded
+2019-05-08T09:39:09.043Z - success: builder loaded
+2019-05-08T09:39:09.045Z - success: cocos-analytics loaded
+2019-05-08T09:39:09.049Z - success: console loaded
+2019-05-08T09:39:09.081Z - success: fb-instant-games loaded
+2019-05-08T09:39:09.085Z - success: hierarchy loaded
+2019-05-08T09:39:09.089Z - success: inspector loaded
+2019-05-08T09:39:09.090Z - success: keystore loaded
+2019-05-08T09:39:09.094Z - success: node-library loaded
+2019-05-08T09:39:09.096Z - success: package-asset loaded
+2019-05-08T09:39:09.097Z - success: preferences loaded
+2019-05-08T09:39:09.100Z - success: project-exporter loaded
+2019-05-08T09:39:09.115Z - success: project-importer loaded
+2019-05-08T09:39:09.117Z - success: project-settings loaded
+2019-05-08T09:39:09.121Z - success: ui-kit loaded
+2019-05-08T09:39:09.125Z - success: ui-grid loaded
+2019-05-08T09:39:09.129Z - success: scene loaded
+2019-05-08T09:39:09.130Z - success: sprite-editor loaded
+2019-05-08T09:39:09.134Z - success: store loaded
+2019-05-08T09:39:09.139Z - success: timeline loaded
+2019-05-08T09:39:09.139Z - normal: Loading builtin packages
+2019-05-08T09:39:09.143Z - success: asset-db-debugger loaded
+2019-05-08T09:39:09.144Z - success: color-picker loaded
+2019-05-08T09:39:09.147Z - success: package-manager loaded
+2019-05-08T09:39:09.148Z - success: qqplay-adapter loaded
+2019-05-08T09:39:09.153Z - success: sdkbox loaded
+2019-05-08T09:39:09.158Z - success: tester loaded
+2019-05-08T09:39:09.161Z - success: ui-kit-preview-extra loaded
+2019-05-08T09:39:09.164Z - success: ui-kit-preview loaded
+2019-05-08T09:39:09.166Z - success: ui-tree loaded
+2019-05-08T09:39:09.167Z - success: weapp-adapter loaded
+2019-05-08T09:39:10.061Z - normal: Initializing project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-08T09:39:10.063Z - normal: Loading packages
+2019-05-08T09:39:10.068Z - normal: Watching packages
+2019-05-08T09:39:10.174Z - normal: Run Application
+2019-05-08T09:39:10.488Z - warn: [db-task][init] Backup unused meta file: db://assets/Animation.meta
+2019-05-08T09:39:13.649Z - success: preview server running at http://localhost:7456
+2019-05-08T09:39:17.345Z - normal: 1.9.3

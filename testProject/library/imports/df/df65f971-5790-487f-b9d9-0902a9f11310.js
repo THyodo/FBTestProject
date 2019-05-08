@@ -170,9 +170,9 @@ cc.Class({
     //呼ばれたタイミングでスクショを撮る。シェアなどのimageにはここの戻り値を入れればいいかも
     getImgBase64: function getImgBase64() {
         var target = cc.find('Canvas');
-        // let width = cc.winSize.width, height = cc.winSize.height;
-        var width = 720,
-            height = 375;
+        var width = cc.winSize.width,
+            height = cc.winSize.height;
+        // let width = 720, height = 375;
         var renderTexture = new cc.RenderTexture(width, height);
         renderTexture.begin();
         target._sgNode.visit();
