@@ -8,7 +8,7 @@
       "x": 0,
       "y": 23,
       "width": 1440,
-      "height": 816,
+      "height": 822,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 366.953125,
+                "height": 367,
                 "type": "panel",
                 "width": 215
               },
@@ -27,7 +27,7 @@
                 "children": [
                   "assets"
                 ],
-                "height": 355.046875,
+                "height": 355,
                 "type": "panel",
                 "width": 215
               }
@@ -67,7 +67,9 @@
         "assets",
         "scene"
       ]
-    }
+    },
+    "window-1557366086312": {},
+    "worker": {}
   },
   "panels": {
     "sprite-editor": {
