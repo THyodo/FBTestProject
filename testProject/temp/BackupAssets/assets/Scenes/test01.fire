@@ -1572,7 +1572,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Btn_SC",
+    "_name": "Btn_Bot",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1697,7 +1697,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "スクリーンショット",
+    "_N$string": "Bot購読",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -1797,7 +1797,7 @@
       "__id__": 5
     },
     "component": "FbInstantGames",
-    "handler": "showSS",
+    "handler": "onBuyBot",
     "customEventData": ""
   },
   {

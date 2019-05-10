@@ -6,6 +6,9 @@
       "play_turn": {
         "example": "Edgar played their move"
       }
+    },
+    "bot": {
+      "subscription_type": "OPT_IN_PUBLIC"
     }
   }
 }

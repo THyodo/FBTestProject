@@ -68,6 +68,9 @@ cc.Class({
 
 
     //友達とのチャット画面でゲームを始めた時にだけ呼ばれる。「〇〇さんが今プレイしました。次はあなたの番です」←これ
+    //何も書いていないとデフォルトの文章を自動翻訳で送る。この時の言語は端末に設定されている言語に依存する。
+    //場合によって文章を変えたい場合は言語コードを記述して文章を書けば良い。
+
     playMessage: function playMessage() {
 
         if (typeof FBInstant == 'undefined') return;
@@ -75,25 +78,24 @@ cc.Class({
         FBInstant.updateAsync({
             action: 'CUSTOM',
             cta: 'Play',
-            // image: this.getImgBase64(),
             image: this.getImgBase64(),
 
             //言語別で表示するメッセージを変える。言語コードについては→　　https://so-zou.jp/web-app/tech/data/code/language.htm
+            //国名指定のコードでないと反応しない。
 
             text: {
                 default: FBInstant.player.getName() + "just played. It's your turn!",
                 localizations: {
-                    //派生言語は別に追加する必要あり。
-                    en_US: '', //英語(アメリカ)
-                    pt_BR: '', //ポルトガル語(ブラジル)
-                    id_ID: '', //インドネシア語(インドネシア)
-                    fr_CA: '', //フランス語(フランス)
-                    vi_VN: '', //ベトナム語(ベトナム)
-                    th_TH: '', //タイ語(タイ)
-                    tr_TR: '', //トルコ語(トルコ)
-                    de_DE: '', //ドイツ語(ドイツ)
-                    es_ES: '', //スペイン語(スペイン)
-                    ar_AE: '', //アラビア語(アメリカ)
+                    // en_US: '',                                                                  //英語(アメリカ)
+                    // pt_BR: '',                                                                  //ポルトガル語(ブラジル)
+                    // id_ID: '',                                                                  //インドネシア語(インドネシア)
+                    // fr_CA: '',                                                                  //フランス語(フランス)
+                    // vi_VN: '',                                                                  //ベトナム語(ベトナム)
+                    // th_TH: '',                                                                  //タイ語(タイ)
+                    // tr_TR: '',                                                                  //トルコ語(トルコ)
+                    // de_DE: '',                                                                  //ドイツ語(ドイツ)
+                    // es_ES: '',                                                                  //スペイン語(スペイン)
+                    // ar_AE: '',                                                                  //アラビア語(アラブ)
 
                     ja_JP: FBInstant.player.getName() + 'さんが今プレイしました。あなたの番です！' //日本語(日本)
                 }
@@ -146,6 +148,8 @@ cc.Class({
 
     //Botサイト登録。
     onBuyBot: function onBuyBot() {
+        if (typeof FBInstant == 'undefined') return;
+
         FBInstant.player.subscribeBotAsync().then({
             // Player is subscribed to the bot
         }).then(function (e) {
@@ -158,11 +162,14 @@ cc.Class({
     },
 
 
-    //呼ばれたタイミングでスクショを撮る。シェアなどのimageにはここの戻り値を入れればいいかも
-    getImgBase64: function getImgBase64() {
+    //Canvasの左下から指定したサイズ分のスクショを撮る。画像データはbase64に変換される。
+    getImgBase64: function getImgBase64(w, h) {
         var target = cc.find('Canvas');
+
         var width = 720,
             height = 375;
+        if (w != null && h != null) width = w, height = h;
+
         var renderTexture = new cc.RenderTexture(width, height);
         renderTexture.begin();
         target._sgNode.visit();
