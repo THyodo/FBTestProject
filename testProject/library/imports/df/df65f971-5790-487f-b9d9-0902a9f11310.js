@@ -7,7 +7,7 @@ cc._RF.push(module, 'df65flxV5BIf7nZCQKp8RMQ', 'FbInstantGames');
 //
 //      各関数のimage要素を指定した画像にしたい場合、あらかじめBase64に変換した文字列型を入力してください。ただ、すごく長いです。
 //      画像が小さすぎると最低ラインまで引き伸ばして表示されるので注意。200px未満は若干ぼやけるようです。
-//      48:25の画像だとスマホでジャストのサイズになります。(PC版だとフルで表示されます)720x375が理想サイズ。
+//      48:25の画像だとスマホでジャストのサイズになります。(PC版だとフルで表示されます)720x375が理想サイズ？　
 //      スクショでいいならgetImgBase64()を読んだだけで大丈夫です。
 //
 
@@ -16,12 +16,13 @@ cc.Class({
 
     properties: {
         testText: cc.Label,
-        shareUrl: String,
-        tSprite: cc.Node
+        spriteUrl: String,
+        tSprite: cc.Node,
+
+        gameTitle: 'TEST'
     },
 
-    // onLoad () {},
-
+    onLoad: function onLoad() {},
     start: function start() {},
 
 
@@ -52,6 +53,8 @@ cc.Class({
 
         if (typeof FBInstant == 'undefined') return;
 
+        this.tSprite.active = true;
+
         FBInstant.shareAsync({
             intent: 'CUSTOM',
             image: this.getImgBase64(),
@@ -64,6 +67,8 @@ cc.Class({
             this.testText.string = '';
             console.log('failed!');
         });
+
+        this.tSprite.active = false;
     },
 
 
@@ -75,6 +80,8 @@ cc.Class({
 
         if (typeof FBInstant == 'undefined') return;
 
+        this.tSprite.active = true;
+
         FBInstant.updateAsync({
             action: 'CUSTOM',
             cta: 'Play',
@@ -82,22 +89,58 @@ cc.Class({
 
             //言語別で表示するメッセージを変える。言語コードについては→　　https://so-zou.jp/web-app/tech/data/code/language.htm
             //国名指定のコードでないと反応しない。
+            //ベトナム語に関してはゲームタイトルは言語翻訳する必要あり。
 
             text: {
                 default: FBInstant.player.getName() + "just played. It's your turn!",
                 localizations: {
-                    // en_US: '',                                                                  //英語(アメリカ)
-                    // pt_BR: '',                                                                  //ポルトガル語(ブラジル)
-                    // id_ID: '',                                                                  //インドネシア語(インドネシア)
-                    // fr_CA: '',                                                                  //フランス語(フランス)
-                    // vi_VN: '',                                                                  //ベトナム語(ベトナム)
-                    // th_TH: '',                                                                  //タイ語(タイ)
-                    // tr_TR: '',                                                                  //トルコ語(トルコ)
-                    // de_DE: '',                                                                  //ドイツ語(ドイツ)
-                    // es_ES: '',                                                                  //スペイン語(スペイン)
-                    // ar_AE: '',                                                                  //アラビア語(アラブ)
+                    /*必須言語*/
+                    //英語(アメリカ)
+                    en_US: "An invitation letter for " + this.gameTitle + " has arrived from " + FBInstant.player.getName() + "!",
+                    //ポルトガル語(ブラジル)
+                    pt_BR: "Uma carta de convite para " + this.gameTitle + " chegou de " + FBInstant.player.getName() + "!",
+                    //インドネシア語)(インドネシア)
+                    id_ID: "Surat undangan untuk " + this.gameTitle + " telah tiba dari " + FBInstant.player.getName() + "!",
+                    //フランス語(フランス)
+                    fr_FR: "Une lettre d'invitation pour " + this.gameTitle + " est arrivée de " + FBInstant.player.getName() + "!",
+                    //ベトナム語(ベトナム)
+                    vi_VN: "Một lá thư mời cho " + this.gameTitle + " đã đến từ " + FBInstant.player.getName() + "!",
+                    //タイ語(タイ)
+                    th_TH: "จดหมายเชิญสำหรับ " + this.gameTitle + " มาถึงแล้วจาก " + FBInstant.player.getName() + "!",
+                    //トルコ語(トルコ)
+                    tr_TR: "Ben " + FBInstant.player.getName() + " bir " + this.gameTitle + " davet aldı!",
+                    //ドイツ語(ドイツ)
+                    de_DE: "Ein Einladungsschreiben für " + this.gameTitle + " ist von " + FBInstant.player.getName() + " eingetroffen!",
+                    //スペイン語(スペイン)
+                    es_ES: "¡Una carta de invitación para " + this.gameTitle + " ha llegado de " + FBInstant.player.getName() + "!",
+                    //アラビア語(アメリカ)
+                    ar_AE: "تم إرسال خطاب دعوة لـ " + this.gameTitle + " من " + FBInstant.player.getName() + "!",
 
-                    ja_JP: FBInstant.player.getName() + 'さんが今プレイしました。あなたの番です！' //日本語(日本)
+                    /*推奨言語*/
+                    //日本語(日本)
+                    ja_JP: FBInstant.player.getName() + "さんから" + this.gameTitle + "の招待状が届きました!",
+                    //イタリア語(イタリア)
+                    it_IT: "Una lettera di invito per " + this.gameTitle + " è arrivata da " + FBInstant.player.getName() + "!",
+                    //中国語(簡体)
+                    zh_Hans: "邀请" + this.gameTitle + "从" + FBInstant.player.getName() + "到来了！",
+                    //中国語(繁体)
+                    zh_Hant: "邀請" + this.gameTitle + "從" + FBInstant.player.getName() + "到來了！",
+                    //ロシア語(ロシア)
+                    ru_RU: this.gameTitle + " приглашения прибыл из " + FBInstant.player.getName() + "!",
+                    //ポーランド語(ポーランド)
+                    pl_PL: this.gameTitle + " zaproszenia przybył z " + FBInstant.player.getName() + "!",
+                    //オランダ語(オランダ)
+                    nl_NL: "Een uitnodigingsbrief voor " + this.gameTitle + " is aangekomen van " + FBInstant.player.getName() + "!",
+                    //スウェーデン語(スウェーデン)
+                    sv_SE: "En inbjudan till " + this.gameTitle + " har kommit från " + FBInstant.player.getName() + "!",
+                    //スウェーデン語(フィンランド)
+                    sv_FI: this.gameTitle + "in kutsu on saapunut " + FBInstant.player.getName() + "ilta!",
+                    //ハンガリー語(ハンガリー)
+                    hu_HU: "Meghívást kapott az " + this.gameTitle + "-tól a " + FBInstant.player.getName() + "-től!",
+                    //ギリシャ語(ギリシャ)
+                    el_GR: "Λάβαμε μια πρόσκληση από την " + this.gameTitle + " από " + FBInstant.player.getName() + "!",
+                    //チェコ語(チェコ)
+                    cs_CZ: "Dostali jsme pozvání od " + this.gameTitle + " od " + FBInstant.player.getName() + "!"
                 }
             },
             template: 'WORD_PLAYED',
@@ -111,6 +154,8 @@ cc.Class({
             console.log('failed!');
             this.testText.string = 'failed';
         });
+
+        this.tSprite.active = false;
     },
 
 
@@ -146,28 +191,12 @@ cc.Class({
     },
 
 
-    //Botサイト登録。
-    onBuyBot: function onBuyBot() {
-        if (typeof FBInstant == 'undefined') return;
-
-        FBInstant.player.subscribeBotAsync().then({
-            // Player is subscribed to the bot
-        }).then(function (e) {
-            console.log('Bot購読済み');
-            this.testText.string = 'Bot購読済み';
-        }).catch(function (e) {
-            // Handle subscription failure
-            this.testText.string = 'Bot未購読';
-        });
-    },
-
-
     //Canvasの左下から指定したサイズ分のスクショを撮る。画像データはbase64に変換される。
     getImgBase64: function getImgBase64(w, h) {
         var target = cc.find('Canvas');
 
         var width = 720,
-            height = 375;
+            height = 375; //デフォ値。
         if (w != null && h != null) width = w, height = h;
 
         var renderTexture = new cc.RenderTexture(width, height);

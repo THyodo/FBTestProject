@@ -68,7 +68,6 @@
         "scene"
       ]
     },
-    "window-1557454671239": {},
     "window-1557458997158": {
       "main": false,
       "url": "unpack://static/window.html",
@@ -94,7 +93,8 @@
       "panels": [
         "package-asset.export"
       ]
-    }
+    },
+    "window-1557719220204": {}
   },
   "panels": {
     "sprite-editor": {

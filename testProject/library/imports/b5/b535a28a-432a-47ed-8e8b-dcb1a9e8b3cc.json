@@ -67,7 +67,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 54
+        "__id__": 55
       }
     ],
     "_prefab": null,
@@ -226,6 +226,9 @@
     "_components": [
       {
         "__id__": 53
+      },
+      {
+        "__id__": 54
       }
     ],
     "_prefab": null,
@@ -1573,7 +1576,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Btn_Bot",
+    "_name": "Btn_Battle",
     "_objFlags": 0,
     "_parent": {
       "__id__": 5
@@ -1594,7 +1597,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "fej/dgK1BOnpOleHHcS3aD",
+    "_id": "163ac5aPZJu5E6SVUB+vZu",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1646,7 +1649,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "13vsLnl4ZCOYqMmt//qQC8",
+    "_id": "249bqFwdVGEqdKdE+fUJIF",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1698,7 +1701,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "Bot購読",
+    "_N$string": "対戦する！",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -1797,8 +1800,8 @@
     "target": {
       "__id__": 5
     },
-    "component": "FbInstantGames",
-    "handler": "onBuyBot",
+    "component": "FbMatchGame",
+    "handler": "PlayBattleFriendChoose",
     "customEventData": ""
   },
   {
@@ -2067,7 +2070,18 @@
       "__id__": 8
     },
     "shareUrl": null,
-    "tSprite": null
+    "tSprite": {
+      "__id__": 48
+    }
+  },
+  {
+    "__type__": "5be29NDA9ZMD6Si2H+Tp5l4",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true
   },
   {
     "__type__": "cc.Canvas",

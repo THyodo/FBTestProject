@@ -1,82 +1,59 @@
-2019-05-10T00:34:51.059Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-10T00:34:51.062Z - normal: checking language setting...
-2019-05-10T00:34:51.062Z - normal: Language: en
-2019-05-10T00:34:51.967Z - success: protocol editor-framework registered
-2019-05-10T00:34:51.968Z - success: protocol app registered
-2019-05-10T00:34:51.968Z - success: protocol theme registered
-2019-05-10T00:34:51.968Z - success: protocol packages registered
-2019-05-10T00:34:51.969Z - success: protocol unpack registerred
-2019-05-10T00:34:51.969Z - success: protocol disable-commonjs registerred
-2019-05-10T00:34:54.081Z - normal: connected!
-2019-05-10T00:34:54.094Z - normal: Check project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
-2019-05-10T00:34:54.108Z - normal: Initializing Cocos2d
-2019-05-10T00:34:54.362Z - normal: Initializing Asset Database
-2019-05-10T00:34:54.400Z - success: protocol uuid registerred
-2019-05-10T00:34:54.400Z - success: protocol db registerred
-2019-05-10T00:34:54.400Z - success: protocol thumbnail registerred
-2019-05-10T00:34:54.400Z - normal: Loading editor/builtin packages
-2019-05-10T00:34:54.432Z - success: anysdk loaded
-2019-05-10T00:34:54.581Z - success: assets loaded
-2019-05-10T00:34:54.598Z - success: builder loaded
-2019-05-10T00:34:54.601Z - success: cocos-analytics loaded
-2019-05-10T00:34:54.620Z - success: console loaded
-2019-05-10T00:34:54.654Z - success: fb-instant-games loaded
-2019-05-10T00:34:54.674Z - success: hierarchy loaded
-2019-05-10T00:34:54.693Z - success: inspector loaded
-2019-05-10T00:34:54.694Z - success: keystore loaded
-2019-05-10T00:34:54.713Z - success: node-library loaded
-2019-05-10T00:34:54.715Z - success: package-asset loaded
-2019-05-10T00:34:54.717Z - success: preferences loaded
-2019-05-10T00:34:54.735Z - success: project-exporter loaded
-2019-05-10T00:34:54.770Z - success: project-importer loaded
-2019-05-10T00:34:54.788Z - success: project-settings loaded
-2019-05-10T00:34:54.806Z - success: ui-kit loaded
-2019-05-10T00:34:54.826Z - success: ui-grid loaded
-2019-05-10T00:34:54.845Z - success: scene loaded
-2019-05-10T00:34:54.846Z - success: sprite-editor loaded
-2019-05-10T00:34:54.867Z - success: store loaded
-2019-05-10T00:34:54.889Z - success: timeline loaded
-2019-05-10T00:34:54.889Z - normal: Loading builtin packages
-2019-05-10T00:34:54.908Z - success: asset-db-debugger loaded
-2019-05-10T00:34:54.909Z - success: color-picker loaded
-2019-05-10T00:34:54.927Z - success: package-manager loaded
-2019-05-10T00:34:54.928Z - success: qqplay-adapter loaded
-2019-05-10T00:34:54.951Z - success: sdkbox loaded
-2019-05-10T00:34:54.972Z - success: tester loaded
-2019-05-10T00:34:54.989Z - success: ui-kit-preview-extra loaded
-2019-05-10T00:34:55.008Z - success: ui-kit-preview loaded
-2019-05-10T00:34:55.026Z - success: ui-tree loaded
-2019-05-10T00:34:55.027Z - success: weapp-adapter loaded
-2019-05-10T00:34:56.136Z - normal: Initializing project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
-2019-05-10T00:34:56.139Z - normal: Loading packages
-2019-05-10T00:34:56.146Z - normal: Watching packages
-2019-05-10T00:34:56.250Z - normal: Run Application
-2019-05-10T00:34:56.704Z - failed: [db-task][init] Failed to import asset /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/assets/Scripts/FbInstantGames.js, message: Compile error: SyntaxError: /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/assets/Scripts/FbInstantGames.js: Unexpected token (166:12)
-  164 |         if (w != null && h != null)
-  165 | 
-> 166 |             let width = 720, height = 375;
-      |             ^
-  167 |         let renderTexture = new cc.RenderTexture(width, height);
-  168 |         renderTexture.begin();
-  169 |         target._sgNode.visit();
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1858:30)
-    at Parser.pp$1.parseIfStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2059:26)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1846:19)
-    at Parser.pp$1.parseBlockBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2268:21)
-    at Parser.pp$1.parseBlock (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2247:8)
-    at Parser.pp$3.parseFunctionBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4235:22)
-    at Parser.pp$3.parseMethod (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4180:8)
-    at Parser.pp$3.parseObjectMethod (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4097:10)
-2019-05-10T00:34:57.057Z - success: preview server running at http://localhost:7456
-2019-05-10T00:35:01.173Z - normal: 1.9.3
-2019-05-10T02:17:55.983Z - error: scene not saved. Please build project after saveing project.
-    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:14928)
-    at EventEmitter.ipcRenderer.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:4587)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-10T02:18:01.441Z - normal: Start building with options : {
+2019-05-13T00:19:08.497Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-13T00:19:08.500Z - normal: checking language setting...
+2019-05-13T00:19:08.500Z - normal: Language: en
+2019-05-13T00:19:09.436Z - success: protocol editor-framework registered
+2019-05-13T00:19:09.436Z - success: protocol app registered
+2019-05-13T00:19:09.436Z - success: protocol theme registered
+2019-05-13T00:19:09.436Z - success: protocol packages registered
+2019-05-13T00:19:09.437Z - success: protocol unpack registerred
+2019-05-13T00:19:09.437Z - success: protocol disable-commonjs registerred
+2019-05-13T00:19:10.605Z - normal: connected!
+2019-05-13T00:19:10.609Z - normal: Check project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T00:19:10.619Z - normal: Initializing Cocos2d
+2019-05-13T00:19:10.890Z - normal: Initializing Asset Database
+2019-05-13T00:19:10.929Z - success: protocol uuid registerred
+2019-05-13T00:19:10.930Z - success: protocol db registerred
+2019-05-13T00:19:10.930Z - success: protocol thumbnail registerred
+2019-05-13T00:19:10.930Z - normal: Loading editor/builtin packages
+2019-05-13T00:19:10.961Z - success: anysdk loaded
+2019-05-13T00:19:11.095Z - success: assets loaded
+2019-05-13T00:19:11.099Z - success: builder loaded
+2019-05-13T00:19:11.101Z - success: cocos-analytics loaded
+2019-05-13T00:19:11.106Z - success: console loaded
+2019-05-13T00:19:11.138Z - success: fb-instant-games loaded
+2019-05-13T00:19:11.143Z - success: hierarchy loaded
+2019-05-13T00:19:11.148Z - success: inspector loaded
+2019-05-13T00:19:11.150Z - success: keystore loaded
+2019-05-13T00:19:11.155Z - success: node-library loaded
+2019-05-13T00:19:11.158Z - success: package-asset loaded
+2019-05-13T00:19:11.160Z - success: preferences loaded
+2019-05-13T00:19:11.163Z - success: project-exporter loaded
+2019-05-13T00:19:11.181Z - success: project-importer loaded
+2019-05-13T00:19:11.184Z - success: project-settings loaded
+2019-05-13T00:19:11.188Z - success: ui-kit loaded
+2019-05-13T00:19:11.194Z - success: ui-grid loaded
+2019-05-13T00:19:11.199Z - success: scene loaded
+2019-05-13T00:19:11.200Z - success: sprite-editor loaded
+2019-05-13T00:19:11.206Z - success: store loaded
+2019-05-13T00:19:11.213Z - success: timeline loaded
+2019-05-13T00:19:11.213Z - normal: Loading builtin packages
+2019-05-13T00:19:11.223Z - success: asset-db-debugger loaded
+2019-05-13T00:19:11.224Z - success: color-picker loaded
+2019-05-13T00:19:11.228Z - success: package-manager loaded
+2019-05-13T00:19:11.230Z - success: qqplay-adapter loaded
+2019-05-13T00:19:11.236Z - success: sdkbox loaded
+2019-05-13T00:19:11.241Z - success: tester loaded
+2019-05-13T00:19:11.245Z - success: ui-kit-preview-extra loaded
+2019-05-13T00:19:11.249Z - success: ui-kit-preview loaded
+2019-05-13T00:19:11.252Z - success: ui-tree loaded
+2019-05-13T00:19:11.253Z - success: weapp-adapter loaded
+2019-05-13T00:19:12.377Z - normal: Initializing project /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T00:19:12.380Z - normal: Loading packages
+2019-05-13T00:19:12.385Z - normal: Watching packages
+2019-05-13T00:19:12.488Z - normal: Run Application
+2019-05-13T00:19:13.634Z - success: preview server running at http://localhost:7456
+2019-05-13T00:19:17.767Z - normal: 1.9.3
+2019-05-13T01:24:40.898Z - normal: Start building with options : {
   "androidStudio": true,
   "apiLevel": "",
   "appABIs": [],
@@ -138,24 +115,685 @@
   "projectName": "testProject",
   "debugBuildWorker": false
 }
-2019-05-10T02:18:01.444Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
-2019-05-10T02:18:01.444Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
-2019-05-10T02:18:01.805Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
-2019-05-10T02:18:03.929Z - normal: Compiled project javascript file successfully
-2019-05-10T02:18:03.930Z - normal: Start building assets
-2019-05-10T02:18:03.930Z - normal: Start spawn build-worker
-2019-05-10T02:18:04.614Z - normal: Finish spawn build-worker
-2019-05-10T02:18:04.614Z - normal: Start init build-worker
-2019-05-10T02:18:06.487Z - normal: 1.9.3
-2019-05-10T02:18:06.610Z - normal: Finish init build-worker
-2019-05-10T02:18:06.610Z - normal: Start build-assets in worker
-2019-05-10T02:18:06.808Z - normal: Finish build-assets in worker
-2019-05-10T02:18:06.810Z - normal: Finish building assets
-2019-05-10T02:18:06.817Z - normal: Start building raw assets
-2019-05-10T02:18:06.818Z - normal: Start building plugin scripts
-2019-05-10T02:18:06.839Z - normal: Finish building raw assets
-2019-05-10T02:18:06.847Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2019-05-10T02:18:06.854Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
-2019-05-10T02:18:06.855Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
-2019-05-10T02:18:06.914Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
-2019-05-10T08:21:55.571Z - info: shutdown preview server
+2019-05-13T01:24:40.901Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T01:24:40.901Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T01:24:41.306Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T01:24:42.855Z - normal: Compiled project javascript file successfully
+2019-05-13T01:24:42.855Z - normal: Start building assets
+2019-05-13T01:24:42.855Z - normal: Start spawn build-worker
+2019-05-13T01:24:43.464Z - normal: Finish spawn build-worker
+2019-05-13T01:24:43.464Z - normal: Start init build-worker
+2019-05-13T01:24:45.269Z - normal: 1.9.3
+2019-05-13T01:24:45.382Z - normal: Finish init build-worker
+2019-05-13T01:24:45.382Z - normal: Start build-assets in worker
+2019-05-13T01:24:45.548Z - normal: Finish build-assets in worker
+2019-05-13T01:24:45.551Z - normal: Finish building assets
+2019-05-13T01:24:45.556Z - normal: Start building raw assets
+2019-05-13T01:24:45.557Z - normal: Start building plugin scripts
+2019-05-13T01:24:45.602Z - normal: Finish building raw assets
+2019-05-13T01:24:45.610Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T01:24:45.617Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T01:24:45.618Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T01:24:45.676Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T01:29:04.869Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T01:29:04.880Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T01:29:04.881Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T01:29:04.882Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T01:29:06.496Z - normal: Compiled project javascript file successfully
+2019-05-13T01:29:06.497Z - normal: Start building assets
+2019-05-13T01:29:06.497Z - normal: Start spawn build-worker
+2019-05-13T01:29:07.126Z - normal: Finish spawn build-worker
+2019-05-13T01:29:07.126Z - normal: Start init build-worker
+2019-05-13T01:29:08.969Z - normal: 1.9.3
+2019-05-13T01:29:09.076Z - normal: Finish init build-worker
+2019-05-13T01:29:09.076Z - normal: Start build-assets in worker
+2019-05-13T01:29:09.266Z - normal: Finish build-assets in worker
+2019-05-13T01:29:09.269Z - normal: Finish building assets
+2019-05-13T01:29:09.274Z - normal: Start building raw assets
+2019-05-13T01:29:09.275Z - normal: Start building plugin scripts
+2019-05-13T01:29:09.316Z - normal: Finish building raw assets
+2019-05-13T01:29:09.326Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T01:29:09.330Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T01:29:09.331Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T01:29:09.385Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T02:03:48.137Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T02:03:48.148Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T02:03:48.148Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T02:03:48.149Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T02:03:49.648Z - normal: Compiled project javascript file successfully
+2019-05-13T02:03:49.648Z - normal: Start building assets
+2019-05-13T02:03:49.648Z - normal: Start spawn build-worker
+2019-05-13T02:03:50.249Z - normal: Finish spawn build-worker
+2019-05-13T02:03:50.249Z - normal: Start init build-worker
+2019-05-13T02:03:51.990Z - normal: 1.9.3
+2019-05-13T02:03:52.090Z - normal: Finish init build-worker
+2019-05-13T02:03:52.090Z - normal: Start build-assets in worker
+2019-05-13T02:03:52.292Z - normal: Finish build-assets in worker
+2019-05-13T02:03:52.296Z - normal: Finish building assets
+2019-05-13T02:03:52.301Z - normal: Start building raw assets
+2019-05-13T02:03:52.302Z - normal: Start building plugin scripts
+2019-05-13T02:03:52.342Z - normal: Finish building raw assets
+2019-05-13T02:03:52.349Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T02:03:52.354Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T02:03:52.354Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T02:03:52.405Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T02:05:28.883Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T02:05:28.893Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T02:05:28.894Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T02:05:28.895Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T02:05:30.490Z - normal: Compiled project javascript file successfully
+2019-05-13T02:05:30.490Z - normal: Start building assets
+2019-05-13T02:05:30.490Z - normal: Start spawn build-worker
+2019-05-13T02:05:31.130Z - normal: Finish spawn build-worker
+2019-05-13T02:05:31.130Z - normal: Start init build-worker
+2019-05-13T02:05:33.007Z - normal: 1.9.3
+2019-05-13T02:05:33.116Z - normal: Finish init build-worker
+2019-05-13T02:05:33.116Z - normal: Start build-assets in worker
+2019-05-13T02:05:33.293Z - normal: Finish build-assets in worker
+2019-05-13T02:05:33.296Z - normal: Finish building assets
+2019-05-13T02:05:33.301Z - normal: Start building raw assets
+2019-05-13T02:05:33.302Z - normal: Start building plugin scripts
+2019-05-13T02:05:33.344Z - normal: Finish building raw assets
+2019-05-13T02:05:33.350Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T02:05:33.355Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T02:05:33.355Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T02:05:33.407Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T02:23:32.753Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T02:23:32.764Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T02:23:32.764Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T02:23:32.765Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T02:23:34.352Z - normal: Compiled project javascript file successfully
+2019-05-13T02:23:34.352Z - normal: Start building assets
+2019-05-13T02:23:34.353Z - normal: Start spawn build-worker
+2019-05-13T02:23:34.989Z - normal: Finish spawn build-worker
+2019-05-13T02:23:34.989Z - normal: Start init build-worker
+2019-05-13T02:23:36.841Z - normal: 1.9.3
+2019-05-13T02:23:36.946Z - normal: Finish init build-worker
+2019-05-13T02:23:36.946Z - normal: Start build-assets in worker
+2019-05-13T02:23:37.122Z - normal: Finish build-assets in worker
+2019-05-13T02:23:37.125Z - normal: Finish building assets
+2019-05-13T02:23:37.131Z - normal: Start building raw assets
+2019-05-13T02:23:37.132Z - normal: Start building plugin scripts
+2019-05-13T02:23:37.172Z - normal: Finish building raw assets
+2019-05-13T02:23:37.179Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T02:23:37.184Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T02:23:37.185Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T02:23:37.239Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T03:44:17.176Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T03:44:17.181Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T03:44:17.181Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T03:44:17.182Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T03:44:18.737Z - normal: Compiled project javascript file successfully
+2019-05-13T03:44:18.738Z - normal: Start building assets
+2019-05-13T03:44:18.738Z - normal: Start spawn build-worker
+2019-05-13T03:44:19.357Z - normal: Finish spawn build-worker
+2019-05-13T03:44:19.357Z - normal: Start init build-worker
+2019-05-13T03:44:21.147Z - normal: 1.9.3
+2019-05-13T03:44:21.248Z - normal: Finish init build-worker
+2019-05-13T03:44:21.248Z - normal: Start build-assets in worker
+2019-05-13T03:44:21.421Z - normal: Finish build-assets in worker
+2019-05-13T03:44:21.424Z - normal: Finish building assets
+2019-05-13T03:44:21.431Z - normal: Start building raw assets
+2019-05-13T03:44:21.431Z - normal: Start building plugin scripts
+2019-05-13T03:44:21.472Z - normal: Finish building raw assets
+2019-05-13T03:44:21.480Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T03:44:21.484Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T03:44:21.485Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T03:44:21.534Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T03:47:04.067Z - error: scene not saved. Please build project after saveing project.
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:14928)
+    at EventEmitter.ipcRenderer.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:4587)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-13T03:47:09.747Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T03:47:09.750Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T03:47:09.750Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T03:47:09.751Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T03:47:11.385Z - normal: Compiled project javascript file successfully
+2019-05-13T03:47:11.385Z - normal: Start building assets
+2019-05-13T03:47:11.385Z - normal: Start spawn build-worker
+2019-05-13T03:47:12.025Z - normal: Finish spawn build-worker
+2019-05-13T03:47:12.025Z - normal: Start init build-worker
+2019-05-13T03:47:13.924Z - normal: 1.9.3
+2019-05-13T03:47:14.027Z - normal: Finish init build-worker
+2019-05-13T03:47:14.027Z - normal: Start build-assets in worker
+2019-05-13T03:47:14.201Z - normal: Finish build-assets in worker
+2019-05-13T03:47:14.204Z - normal: Finish building assets
+2019-05-13T03:47:14.212Z - normal: Start building raw assets
+2019-05-13T03:47:14.213Z - normal: Start building plugin scripts
+2019-05-13T03:47:14.254Z - normal: Finish building raw assets
+2019-05-13T03:47:14.261Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T03:47:14.266Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T03:47:14.267Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T03:47:14.317Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T05:59:16.840Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T05:59:16.851Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T05:59:16.851Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T05:59:16.852Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T05:59:18.473Z - normal: Compiled project javascript file successfully
+2019-05-13T05:59:18.473Z - normal: Start building assets
+2019-05-13T05:59:18.474Z - normal: Start spawn build-worker
+2019-05-13T05:59:19.108Z - normal: Finish spawn build-worker
+2019-05-13T05:59:19.108Z - normal: Start init build-worker
+2019-05-13T05:59:21.009Z - normal: 1.9.3
+2019-05-13T05:59:21.124Z - normal: Finish init build-worker
+2019-05-13T05:59:21.124Z - normal: Start build-assets in worker
+2019-05-13T05:59:21.281Z - normal: Finish build-assets in worker
+2019-05-13T05:59:21.284Z - normal: Finish building assets
+2019-05-13T05:59:21.289Z - normal: Start building raw assets
+2019-05-13T05:59:21.289Z - normal: Start building plugin scripts
+2019-05-13T05:59:21.330Z - normal: Finish building raw assets
+2019-05-13T05:59:21.335Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T05:59:21.339Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T05:59:21.340Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T05:59:21.388Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T06:11:46.173Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build",
+  "debug": false,
+  "dest": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.testProject",
+  "platform": "fb-instant-games",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc"
+  ],
+  "sourceMaps": false,
+  "startScene": "b535a28a-432a-47ed-8e8b-dcb1a9e8b3cc",
+  "template": "link",
+  "title": "testProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "7c75aecb-8ae4-46",
+  "zipCompressJs": true,
+  "project": "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject",
+  "projectName": "testProject",
+  "debugBuildWorker": false
+}
+2019-05-13T06:11:46.184Z - normal: Building /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject
+2019-05-13T06:11:46.185Z - normal: Destination /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games
+2019-05-13T06:11:46.186Z - normal: Delete /Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games/**/*
+2019-05-13T06:11:47.752Z - normal: Compiled project javascript file successfully
+2019-05-13T06:11:47.752Z - normal: Start building assets
+2019-05-13T06:11:47.752Z - normal: Start spawn build-worker
+2019-05-13T06:11:48.355Z - normal: Finish spawn build-worker
+2019-05-13T06:11:48.356Z - normal: Start init build-worker
+2019-05-13T06:11:50.140Z - normal: 1.9.3
+2019-05-13T06:11:50.247Z - normal: Finish init build-worker
+2019-05-13T06:11:50.247Z - normal: Start build-assets in worker
+2019-05-13T06:11:50.418Z - normal: Finish build-assets in worker
+2019-05-13T06:11:50.421Z - normal: Finish building assets
+2019-05-13T06:11:50.425Z - normal: Start building raw assets
+2019-05-13T06:11:50.426Z - normal: Start building plugin scripts
+2019-05-13T06:11:50.467Z - normal: Finish building raw assets
+2019-05-13T06:11:50.473Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2019-05-13T06:11:50.477Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/index.html
+2019-05-13T06:11:50.478Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/fb-instant-games/main.js
+2019-05-13T06:11:50.528Z - normal: Built to "/Users/hautecouture_macbookpro/Documents/Cocos_project/FB_Test_Project/testProject/build/fb-instant-games" successfully
+2019-05-13T09:39:28.838Z - info: shutdown preview server
