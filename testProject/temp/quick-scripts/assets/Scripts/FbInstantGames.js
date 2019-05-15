@@ -15,7 +15,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        testText: cc.Label,
         spriteUrl: String,
         tSprite: cc.Node,
 
@@ -28,7 +27,6 @@ cc.Class({
 
     //シェア機能。現状はタイムライン投稿しようとするとtextメッセージが消えてしまう。
     shareGame: function shareGame() {
-        var _this = this;
 
         this.tSprite.active = true;
 
@@ -41,8 +39,7 @@ cc.Class({
             data: { myReplayData: '...' }
         }).then(function () {
             // continue with the game.
-            _this.testText.string = '共有完了';
-            console.log('共有完了');
+            console.log('Sharing complete');
         });
         this.tSprite.active = false;
     },
@@ -53,22 +50,9 @@ cc.Class({
 
         if (typeof FBInstant == 'undefined') return;
 
-        this.tSprite.active = true;
-
-        FBInstant.shareAsync({
-            intent: 'CUSTOM',
-            image: this.getImgBase64(),
-            text: '',
-            data: { myReplayData: '...' }
-        }).then(function () {
-            this.testText.string = 'Message was sent successfully';
-            console.log('Message was sent successfully');
-        }).catch(function () {
-            this.testText.string = '';
-            console.log('failed!');
+        FBInstant.context.chooseAsync().then(function (e) {
+            this.inviteMessage();
         });
-
-        this.tSprite.active = false;
     },
 
 
@@ -77,8 +61,34 @@ cc.Class({
     //場合によって文章を変えたい場合は言語コードを記述して文章を書けば良い。
 
     playMessage: function playMessage() {
+        FBInstant.updateAsync({
+            action: 'CUSTOM',
+            cta: 'Play',
+            image: this.getImgBase64(),
 
-        if (typeof FBInstant == 'undefined') return;
+            //言語別で表示するメッセージを変える。言語コードについては→　　https://so-zou.jp/web-app/tech/data/code/language.htm
+            //国名指定のコードでないと反応しない。
+
+            text: {
+                default: FBInstant.player.getName() + "just played. It's your turn!",
+                localizations: {
+                    ja_JP: FBInstant.player.getName() + "さんがプレイしました。次はあなたの番です！"
+                }
+            },
+            template: 'WORD_PLAYED',
+            data: { myReplayData: '...' },
+            strategy: 'IMMEDIATE',
+            notification: 'NO_PUSH'
+        }).then(function () {
+            console.log('Message was sent successfully');
+        }).catch(function () {
+            console.log('failed!');
+        });
+    },
+
+
+    //招待の時のメッセージ
+    inviteMessage: function inviteMessage() {
 
         this.tSprite.active = true;
 
@@ -89,7 +99,6 @@ cc.Class({
 
             //言語別で表示するメッセージを変える。言語コードについては→　　https://so-zou.jp/web-app/tech/data/code/language.htm
             //国名指定のコードでないと反応しない。
-            //ベトナム語に関してはゲームタイトルは言語翻訳する必要あり。
 
             text: {
                 default: FBInstant.player.getName() + "just played. It's your turn!",
@@ -122,9 +131,9 @@ cc.Class({
                     //イタリア語(イタリア)
                     it_IT: "Una lettera di invito per " + this.gameTitle + " è arrivata da " + FBInstant.player.getName() + "!",
                     //中国語(簡体)
-                    zh_Hans: "邀请" + this.gameTitle + "从" + FBInstant.player.getName() + "到来了！",
+                    zh_Hans: "我们收到了" + FBInstant.player.getName() + "的" + this.gameTitle + "邀请！",
                     //中国語(繁体)
-                    zh_Hant: "邀請" + this.gameTitle + "從" + FBInstant.player.getName() + "到來了！",
+                    zh_Hant: "我們收到了" + FBInstant.player.getName() + "的" + this.gameTitle + "邀請！",
                     //ロシア語(ロシア)
                     ru_RU: this.gameTitle + " приглашения прибыл из " + FBInstant.player.getName() + "!",
                     //ポーランド語(ポーランド)
@@ -132,15 +141,15 @@ cc.Class({
                     //オランダ語(オランダ)
                     nl_NL: "Een uitnodigingsbrief voor " + this.gameTitle + " is aangekomen van " + FBInstant.player.getName() + "!",
                     //スウェーデン語(スウェーデン)
-                    sv_SE: "En inbjudan till " + this.gameTitle + " har kommit från " + FBInstant.player.getName() + "!",
-                    //スウェーデン語(フィンランド)
-                    sv_FI: this.gameTitle + "in kutsu on saapunut " + FBInstant.player.getName() + "ilta!",
+                    sv_SE: "Vi fick en " + this.gameTitle + " inbjudan från " + FBInstant.player.getName() + "!",
+                    //フィンランド語(フィンランド)
+                    sv_FI: FBInstant.player.getName() + ": lta on saapunut " + this.gameTitle + "-kutsu!",
                     //ハンガリー語(ハンガリー)
-                    hu_HU: "Meghívást kapott az " + this.gameTitle + "-tól a " + FBInstant.player.getName() + "-től!",
+                    hu_HU: "Meghívás az " + this.gameTitle + "-ra megérkezett a " + FBInstant.player.getName() + "-ból!",
                     //ギリシャ語(ギリシャ)
                     el_GR: "Λάβαμε μια πρόσκληση από την " + this.gameTitle + " από " + FBInstant.player.getName() + "!",
                     //チェコ語(チェコ)
-                    cs_CZ: "Dostali jsme pozvání od " + this.gameTitle + " od " + FBInstant.player.getName() + "!"
+                    cs_CZ: "Dostali jsme pozvání od firmy " + this.gameTitle + " od společnosti " + FBInstant.player.getName() + "!"
                 }
             },
             template: 'WORD_PLAYED',
@@ -149,10 +158,8 @@ cc.Class({
             notification: 'NO_PUSH'
         }).then(function () {
             console.log('Message was sent successfully');
-            this.testText.string = 'Message was sent successfully';
         }).catch(function () {
             console.log('failed!');
-            this.testText.string = 'failed';
         });
 
         this.tSprite.active = false;
@@ -167,10 +174,8 @@ cc.Class({
             if (canCreateShortcut) {
                 FBInstant.createShortcutAsync().then(function () {
                     // Shortcut created
-                    this.testText.string = 'ショートカット作成';
                 }).catch(function () {
                     // Shortcut not created
-                    this.testText.string = 'ショートカット作成失敗';
                 });
             }
         });
@@ -184,7 +189,6 @@ cc.Class({
 
         FBInstant.context.chooseAsync().then(function (e) {
 
-            this.testText.string = "FBInstant.context.chooseAsync complete";
             console.log("FBInstant.context.chooseAsync complete");
             console.log(e);
         });

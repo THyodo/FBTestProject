@@ -68,33 +68,7 @@
         "scene"
       ]
     },
-    "window-1557458997158": {
-      "main": false,
-      "url": "unpack://static/window.html",
-      "windowType": "dockable",
-      "x": 520,
-      "y": 160,
-      "width": 404,
-      "height": 528,
-      "layout": {
-        "children": [
-          {
-            "active": 0,
-            "children": [
-              "package-asset.export"
-            ],
-            "height": 506,
-            "type": "panel",
-            "width": 404
-          }
-        ],
-        "type": "dock-v"
-      },
-      "panels": [
-        "package-asset.export"
-      ]
-    },
-    "window-1557719220204": {}
+    "window-1557824535169": {}
   },
   "panels": {
     "sprite-editor": {
